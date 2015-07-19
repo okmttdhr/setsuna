@@ -7,6 +7,7 @@ import withStyles from '../../decorators/withStyles';
 import AppActions from '../../actions/AppActions';
 import AppStore from '../../stores/AppStore';
 import Header from '../Header';
+import AboutPage from '../AboutPage';
 import ContentPage from '../ContentPage';
 import ContactPage from '../ContactPage';
 import LoginPage from '../LoginPage';
@@ -45,13 +46,12 @@ class App {
       case '/':
       case '/privacy':
         let page = AppStore.getPage(this.props.path);
-        console.log(page);
-        console.log(pages);
         component = React.createElement(pages[page.component], page);
         break;
 
       case '/about':
-        component = <ContactPage />;
+        console.log('about in');
+        component = <AboutPage />;
         break;
 
       case '/contact':
