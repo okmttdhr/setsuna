@@ -25,15 +25,11 @@ class Footer {
     return (
       <div className="Footer">
         <div className="Footer-container">
-          <span className="Footer-text">© Your Company</span>
+          <span className="Footer-text">© okp</span>
           <span className="Footer-spacer">·</span>
-          <a className="Footer-link" href="/" onClick={Link.handleClick}>Home</a>
+          <a className="Footer-link" href="/" onClick={Link.handleClick}>Facebook</a>
           <span className="Footer-spacer">·</span>
-          <a className="Footer-link" href="/privacy" onClick={Link.handleClick}>Privacy</a>
-          <span className="Footer-spacer">·</span>
-          <a className="Footer-link" href="/not-found" onClick={Link.handleClick}>Not Found</a>
-          <span className="Footer-spacer"> | </span>
-          <span ref="viewport" className="Footer-viewport Footer-text Footer-text--muted">Viewport:</span>
+          <a className="Footer-link" href="/privacy" onClick={Link.handleClick}>Twitter</a>
         </div>
       </div>
     );
